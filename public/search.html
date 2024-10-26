@@ -3,8 +3,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/public/search.css">
   </head>
   <body>
+    
+    <nav class="navbar">
+      <a href="/index.html">
+          <button class="nav-button">Home</button>
+      </a>
+      <a href="/games/index.html">
+          <button class="nav-button">Games</button>
+      </a>
+      <a href="#">
+          <button class="nav-button">Settings</button>
+      </a>
+      <a href="#">
+          <button class="nav-button">Proxy</button>
+      </a>
+  </nav>
+
     <form id="uv-form">
       <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden" />
       <input id="uv-address" type="text" placeholder="Search Google or type a URL" />
