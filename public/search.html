@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  </head>
+  <body>
+    <form id="uv-form">
+      <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden" />
+      <input id="uv-address" type="text" placeholder="Search Google or type a URL" />
+    </form>
+    <div>
+      <p id="uv-error"></p>
+      <pre id="uv-error-code"></pre>
+    </div>
+    <div class="shortcuts">
+      <button onclick="loadPage('https://youtube.com/')" class="shortcut" title="shortcut">
+        <p>YouTube</p>
+      </button>
+      <button onclick="loadPage('https://discord.com/')" class="shortcut" title="shortcut">
+        <p>Discord</p>
+      </button>
+      <button onclick="loadPage('https://play.geforcenow.com/')" class="shortcut" title="shortcut">
+        <p>GeForce Now</p>
+      </button>
+      <button onclick="loadPage('https://netflix.com/')" class="shortcut" title="shortcut">
+        <p>Netflix</p>
+      </button>
+      <button onclick="loadPage('https://chess.com/')" class="shortcut" title="shortcut">
+        <p>Chess.com</p>
+      </button>
+      <button onclick="loadPage('https://chat.vercel.ai/')" class="shortcut" title="shortcut">
+        <p>Chatbot</p>
+      </button>
+    </div>
+  </body>
+  <script src="uv/uv.bundle.js" defer></script>
+  <script src="uv/uv.config.js" defer></script>
+  <script src="uv/register-sw.js" defer></script>
+  <script src="uv/search.js" defer></script>
+  <script src="uv/proxy.js" defer></script>
+</html>
