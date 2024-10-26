@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <link rel="shortcut icon" type="x-icon" href="/Imgs/asteroid.png">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/games/styles.css">
+   <title>Comet Games</title>
+ </head>
+ <body>
+
+    <nav class="navbar">
+        <a href="/index.html">
+            <button class="nav-button">Home</button>
+        </a>
+        <a href="/games/index.html">
+            <button class="nav-button">Games</button>
+        </a>
+        <a href="#">
+            <button class="nav-button">Settings</button>
+        </a>
+        <a href="#">
+            <button class="nav-button">Proxy</button>
+        </a>
+    </nav>
+
+    <div class="search-container">
+      <input type="text" id="searchBar" oninput="filterGames()">
+  </div>
+
+
+    <main>
+        <main>
+            <div class="boxes-container">
+              <div class="box" onclick="openGame('survey')">
+                <img src="/Imgs/GamePNG/Forms.png">
+                <span>Suggestions/Feedback</span>
+              </div>
+              <div class="box" onclick="openGame(1)">
+                <img src="/Imgs/GamePNG/1.png">
+                <span>1</span>
+              </div>
+              <div class="box" onclick="openGame('1v1space')">
+                <img src="/projects/1v1space/splash.png">
+                <span>1v1space</span>
+              </div>
+              <div class="box" onclick="openGame('3Dminigolf')">
+                <img src="/Imgs/icons/3dminigolf.png">
+                <span>3D mini-golf</span>
+              </div>
+              <div class="box" onclick="openGame('10mtd')">
+                <img src="/Imgs/icons/10minutestilldawn.png">
+                <span>10 minutes till dawn</span>
+              </div>
+              <div class="box" onclick="openGame(2048)">
+                <img src="/Imgs/GamePNG/2048.png">
+                <span>2048</span>
+              </div>
+              <div class="box" onclick="openGame(9007199254740992)">
+                <img src="/projects/9007199254740992/logo-4.png">
+                <span>9007199254740992</span>
+              </div>
+              <div class="box" onclick="openGame('aswc')">
+                <img src="/Imgs/icons/asmallworldcup.avif">
+                <span>A small world cup</span>
+              </div>
+              <div class="box" onclick="openGame('achievementunlocked')">
+                <img src="/projects/achievementunlocked/achievementunlocked.png">
+                <span>achievementunlocked</span>
+              </div>
+              <div class="box"onclick="openGame('adrenalinechallenge')">
+                <img src="/projects/adrenalinechallenge/adrenalinechallenge.jpg">
+                <span>adrenalinechallenge</span>
+              </div>
+              <div class="box"onclick="openGame('amoung-us')">
+                <img src="/projects/among-us/red.png">
+                <span>among-us</span>
+              </div>
+              <div class="box" onclick="openGame('animalarena')">
+                <img src="/projects/animal-arena/favicon.png">
+                <span>Animal arena</span>
+              </div>
+              <div class="box" onclick="openGame('armedforcesio')">
+                <img src="/Imgs/icons/armedforcesio.jpg">
+                <span>Armed Forces io</span>
+              </div>
+              <div class="box"onclick="openGame('avalanche')">
+                <img src="/projects/avalanche/avalanche.png">
+                <span>avalanche</span>
+              </div>
+              <div class="box" onclick="openGame('awesometanks2')">
+                <img src="/Imgs/icons/awesometanks2.png">
+                <span>Awesome tanks 2</span>
+              </div>
+              <div class="box"onclick="openGame('backrooms')">
+                <img src="/projects/backrooms/img/splash.jpg">
+                <span>backrooms</span>
+              </div>
+              <div class="box"onclick="openGame('bacon-may-die')">
+                <img src="/Imgs/icons/baconmaydie.avif">
+                <span>Bacon may die</span>
+              </div>
+              <div class="box"onclick="openGame('amoung-us')">
+                <img src="/Imgs/icons/balldodge.png">
+                <span>Ball dodge</span>
+              </div>
+              <div class="box"onclick="openGame('bankrob')">
+                <img src="/Imgs/icons/bankrobbery.png">
+                <span>Bank robbery</span>
+              </div>
+              <div class="box"onclick="openGame('bankrob2')">
+                <img src="/Imgs/icons/bankrobbery2.png">
+                <span>Bank robbery 2</span>
+              </div>
+              <div class="box"onclick="openGame('basketball-stars')">
+                <img src="/Imgs/icons/basketrandom.jpeg">
+                <span>Basket Random</span>
+              </div>
+              <div class="box"onclick="openGame('basketball-stars')">
+                <img src="/projects/basketball-stars/assets/images/basketball-stars.png">
+                <span>basketball-stars</span>
+              </div>
+              <div class="box"onclick="openGame('battle-wheels')">
+                <img src="/Imgs/icons/battlewheels.avif">
+                <span>Battle wheels</span>
+              </div>
+              <div class="box"onclick="openGame('battleforgondor')">
+                <img src="/projects/battleforgondor/3557.jpg">
+                <span>battleforgondor</span>
+              </div>
+              <div class="box"onclick="openGame('bigredbutton')">
+                <img src="/projects/bigredbutton/bigredbutton.png">
+                <span>bigredbutton</span>
+              </div>
+              <div class="box"onclick="openGame('bitlife')">
+                <img src="/Imgs/icons/bitlife.png">
+                <span>bitlife</span>
+              </div>
+              <div class="box"onclick="openGame('blackknight')">
+                <img src="/projects/blackknight/blackknight.png">
+                <span>blackknight</span>
+              </div>
+              <div class="box"onclick="openGame('blockpost')">
+                <img src="/projects/blockpost/thumb.png">
+                <span>Blockpost</span>
+              </div>
+              <div class="box"onclick="openGame('bloonstd')">
+                <img src="/projects/bloonstd/bloonstd.jpg">
+                <span>bloonstd</span>
+              </div>
+              <div class="box"onclick="openGame('bloonstd2')">
+                <img src="/projects/bloonstd2/bloonstd2.png">
+                <span>bloonstd2</span>
+              </div>
+              <div class="box"onclick="openGame('bloxors')">
+                <img src="/projects/bloxors/block.png">
+                <span>bloxors</span>
+              </div>
+              <div class="box"onclick="openGame('blumgi-ball')">
+                <img src="/Imgs/icons/blumgiball.jpeg">
+                <span>Blumgi ball</span>
+              </div>
+              <div class="box"onclick="openGame('blumgi-bloom')">
+                <img src="/Imgs/icons/blumgibloom.avif">
+                <span>Blumgi bloom</span>
+              </div>
+              <div class="box"onclick="openGame('blumgi-castle')">
+                <img src="/Imgs/icons/blumgicastle.avif">
+                <span>Blumgi castle</span>
+              </div>
+              <div class="box"onclick="openGame('blumgi-dragon')">
+                <img src="/Imgs/icons/blumgidragon.avif">
+                <span>Blumgi dragon</span>
+              </div>
+              <div class="box"onclick="openGame('blumgi-racers')">
+                <img src="/Imgs/icons/blumgiracers.avif">
+                <span>Blumgi Racers</span>
+              </div>
+              <div class="box"onclick="openGame('blumgi-rocket')">
+                <img src="/Imgs/icons/blumgirocket.avif">
+                <span>Blumgi rocket</span>
+              </div>
+              <div class="box"onclick="openGame('blumgi-slime')">
+                <img src="/Imgs/icons/blumgislime.avif">
+                <span>Blumgi slime</span>
+              </div>
+              <div class="box"onclick="openGame('blumgi-soccer')">
+                <img src="/Imgs/icons/blumgisoccer.png">
+                <span>Blumgi soccer</span>
+              </div>
+              <div class="box"onclick="openGame('bouncy-basketball')">
+                <img src="/Imgs/icons/bouncybasketball.avif">
+                <span>Bouncy Basketball</span>
+              </div>
+              <div class="box"onclick="openGame('boxhead2play')">
+                <img src="/projects/boxhead2play/boxhead2play.jpg">
+                <span>boxhead2play</span>
+              </div>
+              <div class="box"onclick="openGame('breakingthebank')">
+                <img src="/projects/breakingthebank/breakingthebank.png">
+                <span>breaking the bank</span>
+              </div>
+              <div class="box"onclick="openGame('btts')">
+                <img src="/projects/btts/splash.png">
+                <span>Big Tower Tiny Square</span>
+              </div>
+              <div class="box"onclick="openGame('buenos-aires')">
+                <img src="/Imgs/icons/buenosaires.png">
+                <span>Buenosaires</span>
+              </div>
+              <div class="box"onclick="openGame('bulletbros')">
+                <img src="/Imgs/icons/bulletbros.avif">
+                <span>BulletBros</span>
+              </div>
+              <div class="box"onclick="openGame('burger-bounty')">
+                <img src="/Imgs/icons/burgerbounty.avif">
+                <span>Burgerbounty</span>
+              </div>
+              <div class="box"onclick="openGame('burritobison')">
+                <img src="/Imgs/icons/burritobison.png">
+                <span>Burrito Bison</span>
+              </div>
+              <div class="box"onclick="openGame('candy-crush')">
+                <img src="/Imgs/icons/candycrush.png">
+                <span>Candy crush</span>
+              </div>
+              <div class="box"onclick="openGame('cannonbball4')">
+                <img src="/projects/cannon-basketball-4/img/splash.png">
+                <span>Cannon basketball 4</span>
+              </div>
+              <div class="box"onclick="openGame('canyondefense')">
+                <img src="/projects/canyondefense/canyondefense.png">
+                <span>canyon defense</span>
+              </div>
+              <div class="box"onclick="openGame('cell-machine')">
+                <img src="/projects/cell-machine/img/te9nDu.png">
+                <span>cell machine</span>
+              </div>
+              <div class="box"onclick="openGame('championarcher')">
+                <img src="/projects/championarcher/championarcher.png">
+                <span>champion archer</span>
+              </div>
+              <div class="box"onclick="openGame('creativekillchamber')">
+                <img src="/Imgs/icons/chicago.png">
+                <span>Chicago</span>
+              </div>
+              <div class="box"onclick="openGame('chicken-merge')">
+                <img src="/Imgs/icons/chickenmerge.avif">
+                <span>ChickenMerge</span>
+              </div>
+              <div class="box" onclick="openGame('choppy-orc')">
+                <img src="/Imgs/icons/choppyorc.png">
+                <span>Choppy orc</span>
+              </div>              
+              <div class="box"onclick="openGame('chrome-dino')">
+                <img src="/projects/chrome-dino/icons/icon-114.png">
+                <span>Chrome Dino</span>
+              </div>
+              <div class="box"onclick="openGame('circlo')">
+                <img src="/projects/circlo/img/download.png">
+                <span>Circlo</span>
+              </div>
+              <div class="box" onclick="openGame('clasic-backgammon')">
+                <img src="/Imgs/icons/classicbackgammon.avif">
+                <span>Clasic backgammon</span>
+              </div>
+              <div class="box" onclick="openGame('cluster-rush')">
+                <img src="/Imgs/icons/clusterrush.png">
+                <span>ClusterRush</span>
+              </div>
+              <div class="box" onclick="openGame('coloron')">
+                <img src="/Imgs/icons/coloron.png">
+                <span>Coloron</span>
+              </div>
+              <div class="box"onclick="openGame('connect3')">
+                <img src="/projects/connect3/connect3.png">
+                <span>Connect 3</span>
+              </div>
+              <div class="box"onclick="openGame('cookie-clicker')">
+                <img src="/projects/cookie-clicker/cookie1.jpeg">
+                <span>Cookie Cliker</span>
+              </div>
+              <div class="box" onclick="openGame('core-ball')">
+                <img src="/Imgs/icons/coreball.jpeg">
+                <span>Coreball</span>
+              </div>
+              <div class="box" onclick="openGame('cow-bay')">
+                <img src="/Imgs/icons/cowbay.avif">
+                <span>Cowbay</span>
+              </div>
+              <div class="box"onclick="openGame('craftmine')">
+                <img src="/projects/craftmine/images/craftmine.png">
+                <span>CraftMine</span>
+              </div>
+              <div class="box" onclick="openGame('crazy-bikes')">
+                <img src="/Imgs/icons/crazybikes.avif">
+                <span>Crazy Bikes</span>
+              </div>
+              <div class="box" onclick="openGame('crazy-cars')">
+                <img src="/Imgs/icons/crazycars.avif">
+                <span>Crazy Cars</span>
+              </div>
+              <div class="box"onclick="openGame('creativekillchamber')">
+                <img src="/projects/creativekillchamber/creativekillchamber.jpg">
+                <span>Creative kill chamber</span>
+              </div>
+              <div class="box" onclick="openGame('crossy-road')">
+                <img src="/Imgs/icons/crossyroad.avif">
+                <span>Crossy Road</span>
+              </div>
+              <div class="box"onclick="openGame('csgo-clicker')">
+                <img src="/Imgs/GamePNG/CSclick.png">
+                <span>CSGO:Clicker</span>
+              </div>
+              <div class="box"onclick="openGame('ctr')">
+                <img src="/projects/ctr-holiday/Holiday_Gift.webp">
+                <span>Cut the rope holiday</span>
+              </div>
+              <div class="box"onclick="openGame('ctr-hol')">
+                <img src="/projects/ctr-tr/logo.png">
+                <span>Cut the rope time travel</span>
+              </div>
+              <div class="box"onclick="openGame('ctr-tr')">
+                <img src="/projects/ctr/logo.png">
+                <span>Cut the rope</span>
+              </div>
+              <div class="box"onclick="openGame('cubefield')">
+                <img src="/projects/cubefield/cubefield.jpg">
+                <span>Cube feild</span>
+              </div>
+              <div class="box"onclick="openGame('cupcake2048')">
+                <img src="/projects/cupcake2048/favicon.png">
+                <span>Cupcake 2048</span>
+              </div>
+              <div class="box" onclick="openGame('cyberpunk-resistance')">
+                <img src="/Imgs/icons/cyberpunkresistance.png">
+                <span>Cyberpunk Resistance</span>
+              </div>
+              <div class="box" onclick="openGame('dadish')">
+                <img src="/Imgs/icons/dadish.avif">
+                <span>Dadish</span>
+              </div>
+              <div class="box" onclick="openGame('dadish-2')">
+                <img src="/Imgs/icons/dadish2.avif">
+                <span>Dadish 2</span>
+              </div>
+              <div class="box" onclick="openGame('dadish-3')">
+                <img src="/Imgs/icons/dadish3.avif">
+                <span>Dadish 3</span>
+              </div>
+              <div class="box" onclick="openGame('dadish-3d')">
+                <img src="/Imgs/icons/dadish3d.png">
+                <span>Dadish 3D</span>
+              </div>
+              <div class="box"onclick="openGame('day-of-meat-castle')">
+                <img src="/projects/day-of-meat-castle/splash_part3.jpg">
+                <span>Day of meat castle</span>
+              </div>
+              <div class="box"onclick="openGame('day-of-meat-radiation')">
+                <img src="/projects/day-of-meat-radiation/splash_2_24bit.png">
+                <span>Day of meat radiation</span>
+              </div>
+              <div class="box"onclick="openGame('dond')">
+                <img src="/projects/deal-or-no-deal/index.jpg">
+                <span>Deal or no deal</span>
+              </div>
+              <div class="box"onclick="openGame('death-run-3d')">
+                <img src="/projects/death-run-3d/img/death.png">
+                <span>Death run 3d</span>
+              </div>
+              <div class="box"onclick="openGame('defend-the-tank')">
+                <img src="/projects/defend-the-tank/images/brand.webp">
+                <span>Defend the tank</span>
+              </div>
+              <div class="box"onclick="openGame('doge2048')">
+                <img src="/projects/doge2048/doge1.jpeg">
+                <span>Doge 2048</span>
+              </div>
+              <div class="box"onclick="openGame('dogeminer')">
+                <img src="/projects/DogeMiner/img/dogeminer_300x300.png">
+                <span>Doge miner</span>
+              </div>
+              <div class="box"onclick="openGame('doodlejump')">
+                <img src="/projects/doodle-jump/doodle.png">
+                <span>Doodle Jump</span>
+              </div>
+              <div class="box"onclick="openGame('doublewires')">
+                <img src="/projects/doublewires/doublewires.png">
+                <span>Double wires</span>
+              </div>
+              <div class="box"onclick="openGame('draw-the-hill')">
+                <img src="/projects/draw-the-hill/icons/icon-512.png">
+                <span>Draw the hill</span>
+              </div>
+              <div class="box"onclick="openGame('dreadhead-parkour')">
+                <img src="/Imgs/icons/dreadheadparkour.avif">
+                <span>Dreadhead parkor</span>
+              </div>
+              <div class="box"onclick="openGame('drift-boss')">
+                <img src="/Imgs/icons/driftboss.jpg">
+                <span>DriftBoss</span>
+              </div>
+              <div class="box"onclick="openGame('drive-mad')">
+                <img src="/Imgs/icons/drivemad.jpeg">
+                <span>DriveMad</span>
+              </div>
+              <div class="box"onclick="openGame('ducklife1')">
+                <img src="/projects/ducklife1/ducklife.png">
+                <span>Ducklife</span>
+              </div>
+              <div class="box"onclick="openGame('ducklife2')">
+                <img src="/projects/ducklife2/ducklife2.png">
+                <span>Ducklife 2</span>
+              </div>
+              <div class="box"onclick="openGame('ducklife3')">
+                <img src="/projects/ducklife3/duck.png">
+                <span>Ducklife 3</span>
+              </div>
+              <div class="box"onclick="openGame('dune')">
+                <img src="/Imgs/icons/dune.png">
+                <span>dune</span>
+              </div>
+              <div class="box"onclick="openGame('eaglercraft')">
+                <img src="/Imgs/icons/eaglercraft.png">
+                <span>eaglercraft</span>
+              </div>
+              <div class="box"onclick="openGame('economical')">
+                <img src="/Imgs/icons/economical.png">
+                <span>Economical</span>
+              </div>
+              <div class="box"onclick="openGame('economical-2')">
+                <img src="/Imgs/icons/economical2.png">
+                <span>Economical 2</span>
+              </div>
+              <div class="box"onclick="openGame('edgenotfound')">
+                <img src="/projects/edgenotfound/edge.png">
+                <span>Edge not found</span>
+              </div>
+              <div class="box"onclick="openGame('eggy-car')">
+                <img src="/projects/eggy-car/icon-256.png">
+                <span>Eggy car</span>
+              </div>
+              <div class="box"onclick="openGame('elasticman')">
+                <img src="/projects/elasticman/elasticman.jpg">
+                <span>Elastic Man</span>
+              </div>
+              <div class="box"onclick="openGame('endlesswar3')">
+                <img src="/projects/endlesswar3/endlesswar3.png">
+                <span>Endless war 3</span>
+              </div>
+              <div class="box"onclick="openGame('epic-shooter')">
+                <img src="/projects/epic-shooter/background.jpg">
+                <span>Epic Shooter</span>
+              </div>
+              <div class="box"onclick="openGame('evil-glitch')">
+                <img src="/projects/evil-glitch/evil.png">
+                <span>Evil glitch</span>
+              </div>
+              <div class="box"onclick="openGame('exo')">
+                <img src="/projects/exo/img/small.jpg">
+                <span>exo</span>
+              </div>
+              <div class="box"onclick="openGame('factoryballs')">
+                <img src="/projects/factoryballs/images/splash.png">
+                <span>Factoryballs</span>
+              </div>
+              <div class="box"onclick="openGame('fake-virus')">
+                <img src="/projects/fake-virus/icon.png">
+                <span>Fake virus</span>
+              </div>
+              <div class="box"onclick="openGame('fantasy-fest')">
+                <img src="/Imgs/icons/fantasyfest.png">
+                <span>Fantasy Fest</span>
+              </div>
+              <div class="box"onclick="openGame('fish-squad')">
+                <img src="/Imgs/icons/fishsquad.avif">
+                <span>Fish Squad</span>
+              </div>
+              <div class="box"onclick="openGame('flappy-2048')">
+                <img src="/projects/flappy-2048/favicon.ico">
+                <span>Flappy 2048</span>
+              </div>
+              <div class="box"onclick="openGame('flappy-bird')">
+                <img src="/projects/flappy-bird/assets/thumb.png">
+                <span>Flappy bird</span>
+              </div>
+              <div class="box"onclick="openGame('flashtetris')">
+                <img src="/projects/flashtetris/flashtetris.png">
+                <span>Flash tetris</span>
+              </div>
+              <div class="box"onclick="openGame('flip-bros')">
+                <img src="/Imgs/icons/flipbros.avif">
+                <span>Flip bros</span>
+              </div>
+              <div class="box"onclick="openGame('four-colors')">
+                <img src="/Imgs/icons/fourcolors.png">
+                <span>Four Colors</span>
+              </div>
+              <div class="box"onclick="openGame('game-inside')">
+                <img src="/projects/game-inside/img/display.png">
+                <span>Game Inside a Game</span>
+              </div>
+              <div class="box"onclick="openGame('geodash')">
+                <img src="/projects/geodash/geoscratchicon.png">
+                <span>Geometry dash</span>
+              </div>
+              <div class="box"onclick="openGame('getaway-shootout')">
+                <img src="/projects/getaway-shootout/img/images.jpg">
+                <span>Getaway shootout</span>
+              </div>
+              <div class="box"onclick="openGame('gimme-the-airpod')">
+                <img src="/projects/gimme-the-airpod/img/logo.png">
+                <span>Gimme the airpod</span>
+              </div>
+              <div class="box"onclick="openGame('gladihoppers')">
+                <img src="/Imgs/icons/gladihoppers.avif">
+                <span>Gladihoppers</span>
+              </div>
+              <div class="box"onclick="openGame('glass-city')">
+                <img src="/projects/glass-city/image.png">
+                <span>Glass city</span>
+              </div>
+              <div class="box"onclick="openGame('gold-digger-fr-vr')">
+                <img src="/Imgs/icons/golddigger.png">
+                <span>Gold digger</span>
+              </div>
+              <div class="box"onclick="openGame('golorfull')">
+                <img src="/Imgs/icons/golorfull.png">
+                <span>Golorfull</span>
+              </div>
+              <div class="box"onclick="openGame('goober-world')">
+                <img src="/Imgs/icons/gooberworld.avif">
+                <span>Goober World</span>
+              </div>
+              <div class="box"onclick="openGame('google-snake')">
+                <img src="/projects/google-snake/img/snake.png">
+                <span>Goole Snake</span>
+              </div>
+              <div class="box"onclick="openGame('greece-love-odyssey')">
+                <img src="/Imgs/icons/greeceloveodyssey.png">
+                <span>Greece love odyssey</span>
+              </div>
+              <div class="box"onclick="openGame('grindcraft')">
+                <img src="/projects/grindcraft/img/splash.png">
+                <span>Grindcraft</span>
+              </div>
+              <div class="box"onclick="openGame('gunspin')">
+                <img src="/Imgs/icons/gunspin.png">
+                <span>gunspin</span>
+              </div>
+              <div class="box"onclick="openGame('hackertype')">
+                <img src="/projects/hackertype/logo192.png">
+                <span>Hackertype</span>
+              </div>
+              <div class="box"onclick="openGame('happy-wheels')">
+                <img src="/Imgs/icons/happywheels.png">
+                <span>Happy Wheels</span>
+              </div>
+              <div class="box"onclick="openGame('haunted-hood')">
+                <img src="/Imgs/icons/hauntedhood.png">
+                <span>Haunted hood</span>
+              </div>
+              <div class="box"onclick="openGame('hawaii')">
+                <img src="/Imgs/icons/hawaii.png">
+                <span>Hawaii</span>
+              </div>
+              <div class="box"onclick="openGame('hba')">
+                <img src="/projects/hba/hoverbotarena.jpg">
+                <span>Hover bot arena </span>
+              </div>
+              <div class="box"onclick="openGame('head-soccer-2023')">
+                <img src="/Imgs/icons/headsoccer2023.png">
+                <span>Head Soccer</span>
+              </div>
+              <div class="box"onclick="openGame('helicopter')">
+                <img src="/projects/helicopter/helicopter.png">
+                <span>Helicopter</span>
+              </div>
+              <div class="box"onclick="openGame('hexempire')">
+                <img src="/projects/hexempire/hexempire.jpg">
+                <span>Hex empire</span>
+              </div>
+              <div class="box"onclick="openGame('HexGL')">
+                <img src="/projects/HexGL/icon.png">
+                <span>HexGL</span>
+              </div>
+              <div class="box"onclick="openGame('Hextris')">
+                <img src="/projects/hextris/images/hextris-logo.png">
+                <span>hextris</span>
+              </div>
+              <div class="box"onclick="openGame('hide-and-smash')">
+                <img src="/Imgs/icons/hideandsmash.avif">
+                <span>Hide and smash</span>
+              </div>
+              <div class="box"onclick="openGame('idle-ants')">
+                <img src="/Imgs/icons/idleants.jpeg">
+                <span>Idle ants</span>
+              </div>
+              <div class="box"onclick="openGame('idlebreakout')">
+                <img src="/projects/idle-breakout/assets/thumbnail.png">
+                <span>Idle breakout</span>
+              </div>
+              <div class="box"onclick="openGame('idle-farming-business')">
+                <img src="/Imgs/icons/idlefarmingbusiness.avif">
+                <span>Farming business</span>
+              </div>
+              <div class="box"onclick="openGame('idle-gang')">
+                <img src="/Imgs/icons/idlegang.avif">
+                <span>idle gang</span>
+              </div>
+              <div class="box"onclick="openGame('idle-light-city')">
+                <img src="/Imgs/icons/idlelightcity.avif">
+                <span>Idle light city</span>
+              </div>
+              <div class="box"onclick="openGame('idle-mining-empire')">
+                <img src="/Imgs/icons/idleminingempire.png">
+                <span>Mining empire</span>
+              </div>
+              <div class="box"onclick="openGame('idle-money-tree')">
+                <img src="/Imgs/icons/idlemoneytree.avif">
+                <span>Idle Money Tree</span>
+              </div>
+              <div class="box"onclick="openGame('idle-pet-business')">
+                <img src="/Imgs/icons/idlepetbusiness.avif">
+                <span>Idle pet business</span>
+              </div>
+              <div class="box"onclick="openGame('idle-shark')">
+                <img src="/projects/idle-shark/img/sharkgame.png">
+                <span>Idle shark</span>
+              </div>
+              <div class="box"onclick="openGame('impossiblequiz')">
+                <img src="/projects/impossiblequiz/impossiblequiz.png">
+                <span>Impossible quiz</span>
+              </div>
+              <div class="box"onclick="openGame('interactivebuddy')">
+                <img src="/projects/interactivebuddy/interactivebuddy.jpg">
+                <span>Interactive buddy</span>
+              </div>
+              <div class="box"onclick="openGame('iron-snout')">
+                <img src="/Imgs/icons/ironsnout.jpeg">
+                <span>Iron snout</span>
+              </div>
+              <div class="box"onclick="openGame('jacksmith')">
+                <img src="/Imgs/icons/jacksmith.png">
+                <span>jacksmith</span>
+              </div>
+              <div class="box"onclick="openGame('just-one-boss')">
+                <img src="/projects/just-one-boss/pv1Gr5.png">
+                <span>Just one boss</span>
+              </div>
+              <div class="box"onclick="openGame('karlsont')">
+                <img src="/Imgs/icons/karlsont.png">
+                <span>Karlsont</span>
+              </div>
+              <div class="box"onclick="openGame('kittencannon')">
+                <img src="/projects/kittencannon/kittencannon.png">
+                <span>kittencannon</span>
+              </div>
+              <div class="box"onclick="openGame('kiwi-clicker')">
+                <img src="/Imgs/icons/kiwiclicker.avif">
+                <span>Kiwi clicker</span>
+              </div>
+              <div class="box"onclick="openGame('krunker')">
+                <img src="/projects/krunker/img/krunker-io.jpg">
+                <span>Krunker</span>
+              </div>
+              <div class="box"onclick="openGame('ks-2-teams')">
+                <img src="/Imgs/icons/ks2teams.png">
+                <span>Ks 2-teams</span>
+              </div>
+              <div class="box"onclick="openGame('learntofly')">
+                <img src="/projects/learntofly/learntofly.png">
+                <span>Learn to fly</span>
+              </div>
+              <div class="box"onclick="openGame('level-devil')">
+                <img src="/Imgs/icons/leveldevil.avif">
+                <span>Levil devil</span>
+              </div>
+              <div class="box"onclick="openGame('mario')">
+                <img src="/Imgs/GamePNG/mario.png">
+                <span>Mario</span>
+              </div>
+              <div class="box"onclick="openGame('master-checkers')">
+                <img src="/Imgs/icons/mastercheckers.avif">
+                <span>Master Checkers</span>
+              </div>
+              <div class="box"onclick="openGame('master-chess')">
+                <img src="/Imgs/icons/masterchess.avif">
+                <span>Master chess</span>
+              </div>
+              <div class="box"onclick="openGame('matrixrampage')">
+                <img src="/projects/matrixrampage/matrixrampage.jpg">
+                <span>Matrix rampage</span>
+              </div>
+              <div class="box"onclick="openGame('meme2048')">
+                <img src="/Imgs/GamePNG/meme2048.png">
+                <span>Meme 2048</span>
+              </div>
+              <div class="box"onclick="openGame('merge-party')">
+                <img src="/Imgs/icons/mergeparty.avif">
+                <span>Merge party</span>
+              </div>
+              <div class="box"onclick="openGame('merge-tycoon')">
+                <img src="/Imgs/icons/mergetycoon.avif">
+                <span>Merge tycoon</span>
+              </div>
+              <div class="box"onclick="openGame('mimelet')">
+                <img src="/Imgs/icons/mimelet.avif">
+                <span>Mimlet</span>
+              </div>
+              <div class="box"onclick="openGame('minecraft')">
+                <img src="/projects/minecraft/splash.jpeg">
+                <span>Minecraft</span>
+              </div>
+              <div class="box"onclick="openGame('minecraft-classic')">
+                <img src="/projects/minecraft-classic/pack.png">
+                <span>Classic Minecraft</span>
+              </div>
+              <div class="box"onclick="openGame('minesweeper')">
+                <img src="/projects/minesweeper/img/minesweeper.png">
+                <span>Minesweeper</span>
+              </div>
+              <div class="box"onclick="openGame('miniputt')">
+                <img src="/projects/miniputt/miniputt.png">
+                <span>Mini Putt</span>
+              </div>
+              <div class="box"onclick="openGame('missiles')">
+                <img src="/projects/missiles/miss.png">
+                <span>Missiles</span>
+              </div>
+              <div class="box"onclick="openGame('monaco')">
+                <img src="/Imgs/icons/monaco.png">
+                <span>Monaco</span>
+              </div>
+              <div class="box"onclick="openGame('monkey-mart')">
+                <img src="/Imgs/icons/monkeymart.jpeg">
+                <span>Monkey Mart</span>
+              </div>
+              <div class="box"onclick="openGame('monkeytype-lite')">
+                <img src="/Imgs/icons/monkeytypelite.png">
+                <span>Monkey type lite</span>
+              </div>
+              <div class="box"onclick="openGame('monster-tracks')">
+                <img src="/Imgs/icons/monstertracks.avif">
+                <span>Monster tracks</span>
+              </div>
+              <div class="box"onclick="openGame('motox3m')">
+                <img src="/projects/motox3m/splash.jpg">
+                <span>Moto x3m</span>
+              </div>
+              <div class="box"onclick="openGame('motox3m-pool')">
+                <img src="/projects/motox3m-pool/splash.jpg">
+                <span>Moto x3m pool</span>
+              </div>
+              <div class="box"onclick="openGame('motox3m-spooky')">
+                <img src="/projects/motox3m-spooky/splash.jpeg">
+                <span>moto x3m spooky</span>
+              </div>
+              <div class="box"onclick="openGame('motox3m-winter')">
+                <img src="/projects/motox3m-winter/download.jpeg">
+                <span>moto x3m winter</span>
+              </div>
+              <div class="box"onclick="openGame('murder')">
+                <img src="/Imgs/icons/murder.png">
+                <span>Murder</span>
+              </div>
+              <div class="box"onclick="openGame('n-gon')">
+                <img src="/projects/n-gon/bot.png">
+                <span>N-gon</span>
+              </div>
+              <div class="box"onclick="openGame('new-york')">
+                <img src="/Imgs/icons/newyork.jpeg">
+                <span>New york</span>
+              </div>
+              <div class="box"onclick="openGame('ns-shaft')">
+                <img src="/projects/ns-shaft/icon.png">
+                <span>Ns-shaft</span>
+              </div>
+              <div class="box"onclick="openGame('nut-simulator')">
+                <img src="/Imgs/icons/nutsimulator.png">
+                <span>Nut simulator</span>
+              </div>
+              <div class="box"onclick="openGame('ohh1')">
+                <img src="/Imgs/icons/ohh1.png">
+                <span>ohh1</span>
+              </div>
+              <div class="box"onclick="openGame('olly-the-paw')">
+                <img src="/Imgs/icons/ollythepaw.png">
+                <span>Olly the paw</span>
+              </div>
+              <div class="box"onclick="openGame('om-bounce')">
+                <img src="/Imgs/GamePNG/om-nom-bounce.webp">
+                <span>Om nom bounce</span>
+              </div>
+              <div class="box"onclick="openGame('ovo')">
+                <img src="/Imgs/icons/ovo.avif">
+                <span>OvO</span>
+              </div>
+              <div class="box"onclick="openGame('ovo-dimensions')">
+                <img src="/Imgs/icons/ovodimensions.avif">
+                <span>OvO dimensions</span>
+              </div>
+              <div class="box"onclick="openGame('pandemic2')">
+                <img src="/projects/pandemic2/pandemic2.png">
+                <span>Pandemic 2</span>
+              </div>
+              <div class="box"onclick="openGame('papaspizzaria')">
+                <img src="/projects/papaspizzaria/papaspizzaria.jpg">
+                <span>Papa's pizzaria</span>
+              </div>
+              <div class="box"onclick="openGame('paper-io-2')">
+                <img src="/Imgs/GamePNG/paperio2.jfif">
+                <span>Paper io 2</span>
+              </div>
+              <div class="box"onclick="openGame('paper-planes')">
+                <img src="/projects/papery-planes/thumb.png">
+                <span>Paper plane</span>
+              </div>
+              <div class="box"onclick="openGame('partical-clicker')">
+                <img src="/Imgs/GamePNG/particleclicker.png">
+                <span>Partical Clicker</span>
+              </div>
+              <div class="box"onclick="openGame('party-toons')">
+                <img src="/Imgs/icons/partytoons.avif">
+                <span>Party toons</span>
+              </div>
+              <div class="box"onclick="openGame('penalty-shooters-2')">
+                <img src="/Imgs/icons/penaltyshooters2.avif">
+                <span>Penalty shooters</span>
+              </div>
+              <div class="box"onclick="openGame('plinko')">
+                <img src="/Imgs/icons/plinko.png">
+                <span>Plinko</span>
+              </div>
+              <div class="box"onclick="openGame('polybranch')">
+                <img src="/projects/polybranch/img/pic1.png">
+                <span>Poly branch</span>
+              </div>
+              <div class="box"onclick="openGame('poor-bunny')">
+                <img src="/Imgs/icons/poorbunny.avif">
+                <span>Poor bunny</span>
+              </div>
+              <div class="box"onclick="openGame('poor-eddie')">
+                <img src="/Imgs/icons/pooreddie.avif">
+                <span>Poor eddie</span>
+              </div>
+              <div class="box"onclick="openGame('popcat-classic')">
+                <img src="/Imgs/icons/popcatclassic.png">
+                <span>Popcat</span>
+              </div>
+              <div class="box"onclick="openGame('portalflash')">
+                <img src="/projects/portalflash/portaltheflashversion.jpg">
+                <span>Flash portal</span>
+              </div>
+              <div class="box"onclick="openGame('president-simulator')">
+                <img src="/Imgs/icons/presidentsimulator.jpg">
+                <span>President simulator</span>
+              </div>
+              <div class="box"onclick="openGame('push-the-square')">
+                <img src="/Imgs/GamePNG/pushthesquare.png">
+                <span>Push the square</span>
+              </div>
+              <div class="box"onclick="openGame('push-your-luck')">
+                <img src="/projects/push-your-luck/assets/img/push.png">
+                <span>Push your luck</span>
+              </div>
+              <div class="box"onclick="openGame('rabbit-samurai')">
+                <img src="/Imgs/icons/rabbitsamurai.png">
+                <span>Rabbit samurai</span>
+              </div>
+              <div class="box"onclick="openGame('rabbit-samurai-2')">
+                <img src="/Imgs/icons/rabbitsamurai2.png">
+                <span>Rabbit samurai 2</span>
+              </div>
+              <div class="box"onclick="openGame('race-survival-arena-king')">
+                <img src="/Imgs/icons/racesurvivalarenaking.png">
+                <span>Race survival</span>
+              </div>
+              <div class="box"onclick="openGame('recoil')">
+                <img src="/Imgs/icons/recoil.png">
+                <span>Recoil</span>
+              </div>
+              <div class="box"onclick="openGame('retro-bowl')">
+                <img src="/projects/retro-bowl/img/icon.jpg">
+                <span>Retro bowl</span>
+              </div>
+              <div class="box"onclick="openGame('retro-bowl-college')">
+                <img src="/Imgs/icons/retrobowlcollege.avif">
+                <span>Retrobowl college</span>
+              </div>
+              <div class="box"onclick="openGame('retro-highway')">
+                <img src="/Imgs/icons/retrohighway.avif">
+                <span>Retro highway</span>
+              </div>
+              <div class="box"onclick="openGame('rio')">
+                <img src="/Imgs/icons/rio.png">
+                <span>Rio</span>
+              </div>
+              <div class="box"onclick="openGame('rocket-buddy')">
+                <img src="/Imgs/icons/rocketbuddy.png">
+                <span>Rocket buddy</span>
+              </div>
+              <div class="box"onclick="openGame('rocket-soccer-derby')">
+                <img src="/Imgs/icons/rocketsoccerderby.avif">
+                <span>Rocket soccer derby</span>
+              </div>
+              <div class="box"onclick="openGame('rolly-vortex')">
+                <img src="/projects/rolly-vortex/icon-256.png">
+                <span>rolly vortex</span>
+              </div>
+              <div class="box"onclick="openGame('rooftop-snipers')">
+                <img src="/projects/rooftop-snipers/img/thumb.png">
+                <span>Rooftop snipers</span>
+              </div>
+              <div class="box"onclick="openGame('roper')">
+                <img src="/Imgs/icons/roper.avif">
+                <span>Roper</span>
+              </div>
+              <div class="box"onclick="openGame('rowdy-city-wrestling')">
+                <img src="/Imgs/icons/rowdycitywrestling.png">
+                <span>Rowdy city wrestling</span>
+              </div>
+              <div class="box"onclick="openGame('rusher-crusher')">
+                <img src="/Imgs/icons/rushercrusher.avif">
+                <span>Rusher crusher</span>
+              </div>
+              <div class="box"onclick="openGame('sand-game')">
+                <img src="/Imgs/GamePNG/sand.png">
+                <span>sand</span>
+              </div>
+              <div class="box"onclick="openGame('sausage-flip')">
+                <img src="/Imgs/icons/sausageflip.avif">
+                <span>Sausage flip</span>
+              </div>
+              <div class="box"onclick="openGame('save-the-hostages')">
+                <img src="/Imgs/icons/savethehostages.png">
+                <span>Save the hostages</span>
+              </div>
+              <div class="box"onclick="openGame('seoul')">
+                <img src="/Imgs/icons/seoul.png">
+                <span>Seoul</span>
+              </div>
+              <div class="box"onclick="openGame('shenzhen-showdown')">
+                <img src="/Imgs/icons/shenzhenshowdown.png">
+                <span>Shenzhen showdown</span>
+              </div>
+              <div class="box"onclick="openGame('ski-slopes')">
+                <img src="/Imgs/icons/skislopes.png">
+                <span>Ski slopes</span>
+              </div>
+              <div class="box"onclick="openGame('slope')">
+                <img src="/projects/slope/slope4.jpeg">
+                <span>Slope</span>
+              </div>
+              <div class="box"onclick="openGame('sm64')">
+                <img src="/Imgs/GamePNG/super-mario-64.webp">
+                <span>mario 64</span>
+              </div>
+              <div class="box"onclick="openGame('the-final-earth')">
+                <img src="/projects/smash-karts/images/icon-144.png">
+                <span>Smash karts</span>
+              </div>
+              <div class="box"onclick="openGame('smokingbarrels')">
+                <img src="/projects/smokingbarrels/smokingbarrels.jpg">
+                <span>Smoking barrels</span>
+              </div>
+              <div class="box"onclick="openGame('sniper-vs-sniper')">
+                <img src="/Imgs/icons/snipervssniper.png">
+                <span>Sniper VS sniper</span>
+              </div>
+              <div class="box"onclick="openGame('snow-rider-3d')">
+                <img src="/Imgs/icons/snowrider3d.png">
+                <span>Snow rider 3d</span>
+              </div>
+              <div class="box"onclick="openGame('snowbattle')">
+                <img src="/projects/snowbattle/img/logo.png">
+                <span>Snow Battle</span>
+              </div>
+              <div class="box"onclick="openGame('soccer-random')">
+                <img src="/Imgs/icons/soccerrandom.png">
+                <span>Soccer Random</span>
+              </div>
+              <div class="box"onclick="openGame('soccer-skills-euro-cup')">
+                <img src="/Imgs/icons/soccerskillseurocup.png">
+                <span>Soccer skills eurocup</span>
+              </div>
+              <div class="box"onclick="openGame('soccer-skills-world-cup')">
+                <img src="/Imgs/icons/soccerskillsworldcup.avif">
+                <span>Soccer skills worldcup</span>
+              </div>
+              <div class="box"onclick="openGame('soldier-legend')">
+                <img src="/projects/soldier-legend/images/splash.jpeg">
+                <span>soldier legend</span>
+              </div>
+              <div class="box"onclick="openGame('solitaire')">
+                <img src="/Imgs/GamePNG/poker.jfif">
+                <span>Solitare</span>
+              </div>
+              <div class="box"onclick="openGame('sort-the-court')">
+                <img src="/Imgs/GamePNG/STC.png">
+                <span>Sort the court</span>
+              </div>
+              <div class="box"onclick="openGame('soundboard')">
+                <img src="/projects/soundboard/img/mlg-favicon.png">
+                <span>MLG soundboard</span>
+              </div>
+              <div class="box"onclick="openGame('space-thing')">
+                <img src="/Imgs/icons/spacething.avif">
+                <span>Space thing</span>
+              </div>
+              <div class="box"onclick="openGame('space-wars-battleground')">
+                <img src="/Imgs/icons/spacewarsbattleground.png">
+                <span>Space wars</span>
+              </div>
+              <div class="box"onclick="openGame('stack')">
+                <img src="/projects/stack/stack.png">
+                <span>stack</span>
+              </div>
+              <div class="box"onclick="openGame('stack-bump-3d')">
+                <img src="/projects/stack-bump-3d/thumbnail.jpg">
+                <span>Stack bump 3d</span>
+              </div>
+              <div class="box"onclick="openGame('stealingthediamond')">
+                <img src="/projects/stealingthediamond/stealingthediamond.jpg">
+                <span>Stealing the diamond</span>
+              </div>
+              <div class="box"onclick="openGame('stick-duel-battle')">
+                <img src="/Imgs/icons/stickduelbattle.png">
+                <span>Stick duel</span>
+              </div>
+              <div class="box"onclick="openGame('stick-fighter')">
+                <img src="/Imgs/icons/stickfighter.avif">
+                <span>Stick Fighter</span>
+              </div>
+              <div class="box"onclick="openGame('stick-merge')">
+                <img src="/Imgs/icons/stickmerge.avif">
+                <span>Stick merge</span>
+              </div>
+              <div class="box"onclick="openGame('stickman-bike')">
+                <img src="/Imgs/icons/stickmanbike.avif">
+                <span>Stickman bike</span>
+              </div>
+              <div class="box"onclick="openGame('stickwar')">
+                <img src="/projects/stickwar/stickwar.jpg">
+                <span>Stick War</span>
+              </div>
+              <div class="box"onclick="openGame('stormthehouse2')">
+                <img src="/projects/stormthehouse2/stormthehouse2.jpg">
+                <span>Storm the house 2</span>
+              </div>
+              <div class="box"onclick="openGame('super-fowlst')">
+                <img src="/projects/super-fowlst/favicon.png">
+                <span>Super fowlst</span>
+              </div>
+              <div class="box"onclick="openGame('super-fowlst-2')">
+                <img src="/projects/super-fowlst-2/favicon.png">
+                <span>Super fowlst 2</span>
+              </div>
+              <div class="box"onclick="openGame('superbrawl')">
+                <img src="/Imgs/icons/superbrawl.avif">
+                <span>Super brawl</span>
+              </div>
+              <div class="box"onclick="openGame('superhot')">
+                <img src="/projects/superhot/hot.jpg">
+                <span>Superhot</span>
+              </div>
+              <div class="box"onclick="openGame('swerve')">
+                <img src="/projects/swerve/img/favicon.jpg">
+                <span>Swerve</span>
+              </div>
+              <div class="box"onclick="openGame('table-tennis-world-tour')">
+                <img src="/Imgs/icons/tabletennisworldtour.jpeg">
+                <span>Table tennis world tour</span>
+              </div>
+              <div class="box"onclick="openGame('tacticalassasin')">
+                <img src="/projects/tacticalassasin2/tacticalassassin2.png">
+                <span>Tactical assasin 2</span>
+              </div>
+              <div class="box"onclick="openGame('tag')">
+                <img src="/Imgs/icons/tag.avif">
+                <span>Tag</span>
+              </div>
+              <div class="box"onclick="openGame('tag-2')">
+                <img src="/Imgs/icons/tag2.avif">
+                <span>Tag2</span>
+              </div>
+              <div class="box"onclick="openGame('tank-trouble02')">
+                <img src="/projects/tank-trouble-2/icon-256.png">
+                <span>Tank trouble</span>
+                </div>
+              <div class="box"onclick="openGame('tanuki-sunset')">
+                <img src="/projects/tanuki-sunset/img/cover.png">
+                <span>tanuki sunset</span>
+              </div>
+              <div class="box"onclick="openGame('temple-of-boom')">
+                <img src="/Imgs/icons/templeofboom.avif">
+                <span>Temple of boom</span>
+              </div>
+              <div class="box"onclick="openGame('temple-run-2')">
+                <img src="/projects/temple-run-2/img/cover.png">
+                <span>Tempul run 2</span>
+              </div>
+              <div class="box"onclick="openGame('the-spear-stickman')">
+                <img src="/Imgs/icons/thespearstickman.avif">
+                <span>The spear stickman</span>
+              </div>
+              <div class="box"onclick="openGame('thebattle')">
+                <img src="/projects/thebattle/thebattle.png">
+                <span>The battle</span>
+              </div>
+              <div class="box"onclick="openGame('the-final-earth')">
+                <img src="/projects/the-final-earth/images.png">
+                <span>The final earth</span>
+              </div>
+              <div class="box"onclick="openGame('theheist')">
+                <img src="/projects/theheist/theheist.jpg">
+                <span>The heist</span>
+              </div>
+              <div class="box"onclick="openGame('there-is-no-game')">
+                <img src="/projects/there-is-no-game/logo.png">
+                <span>There is no game</span>
+              </div>
+              <div class="box"onclick="openGame('thisistheonlylevel')">
+                <img src="/projects/thisistheonlylevel/thisistheonlylevel.png">
+                <span>This is the only level</span>
+              </div>
+              <div class="box"onclick="openGame('time-shooter-2')">
+                <img src="/Imgs/icons/timeshooter2.png">
+                <span>Time shooter 2</span>
+              </div>
+              <div class="box"onclick="openGame('time-shooter-3')">
+                <img src="/Imgs/icons/timeshooter3.png">
+                <span>Time shooter 3</span>
+              </div>
+              <div class="box"onclick="openGame('tiny-fishing')">
+                <img src="/Imgs/icons/tinyfishing.jpeg">
+                <span>Tiny fishing</span>
+              </div>
+              <div class="box"onclick="openGame('tomb-of-the-mask')">
+                <img src="/Imgs/icons/tombofthemask.png">
+                <span>Tomb of the mask</span>
+              </div>
+              <div class="box"onclick="openGame('tosstheturtle')">
+                <img src="/projects/tosstheturtle/tosstheturtle.png">
+                <span>Toss the turtle</span>
+              </div>
+              <div class="box"onclick="openGame('tube-jumpers')">
+                <img src="/projects/tube-jumpers/img/icon.jpg">
+                <span>Tube jumpers</span>
+              </div>
+              <div class="box"onclick="openGame('tunnel-rush')">
+                <img src="/projects/tunnel-rush/img/tunnel.jpg">
+                <span>Tunnel rush</span>
+              </div>
+              <div class="box"onclick="openGame('tv-static')">
+                <img src="/projects/tv-static/static.png">
+                <span>Tv static</span>
+              </div>
+              <div class="box"onclick="openGame('unicycle-hero')">
+                <img src="/Imgs/icons/unicyclehero.avif">
+                <span>Unicycle hero</span>
+              </div>
+              <div class="box"onclick="openGame('unicycle-legend')">
+                <img src="/Imgs/icons/unicyclelegend.avif">
+                <span>Unicycle legend</span>
+              </div>
+              <div class="box"onclick="openGame('vex3')">
+                <img src="/projects/vex3/vex3.png">
+                <span>Vex3</span>
+              </div>
+              <div class="box"onclick="openGame('vex4')">
+                <img src="/projects/vex4/vex-4.jpg">
+                <span>Vex4</span>
+              </div>
+              <div class="box"onclick="openGame('vex5')">
+                <img src="/projects/vex5/vex.jpeg">
+                <span>Vex5</span>
+              </div>
+              <div class="box"onclick="openGame('vex6')">
+                <img src="/projects/vex6/assets/icon.jpeg">
+                <span>Vex6</span>
+              </div>
+              <div class="box"onclick="openGame('webretro-local')">
+                <img src="/projects/webretro-local/assets/icon204.png">
+                <span>Web retro</span>
+              </div>
+              <div class="box"onclick="openGame('wolf3d')">
+                <img src="/projects/wolf3d/art/wolf3d.png">
+                <span>Wolf 3d</span>
+              </div>
+              <div class="box"onclick="openGame('wordle')">
+                <img src="/projects/wordle/img/logo_512x512.png">
+                <span>Worlde+</span>
+              </div>
+              <div class="box"onclick="openGame('worlds-hardest-game')">
+                <img src="/projects/worlds-hardest-game/images/splash.jpg">
+                <span>Worlds hardest game</span>
+              </div>
+              <div class="box"onclick="openGame('worlds-hardest-game-2')">
+                <img src="/projects/worlds-hardest-game-2/the-worlds-hardest-game-2.jpg">
+                <span>Worlds hardest game 2</span>
+              </div>
+              <div class="box"onclick="openGame('yohoho-io')">
+                <img src="/Imgs/icons/yohohoio.avif">
+                <span>Yohoho io</span>
+              </div>
+              <div class="box"onclick="openGame('you-are-bezos')">
+                <img src="/projects/you-are-bezos/img/banner.png">
+                <span>You are Jeff bezos</span>
+              </div>
+            </div>
+    </main>
+
+    <script src="/games/script.js"></script>
+</body>
+</html>
