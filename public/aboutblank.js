@@ -31,3 +31,23 @@ if (localStorage.getItem("aboutblankEnabled") === "true") {
     document.getElementById('enableAboutBlank').disabled = false;
     document.getElementById('disableAboutBlank').disabled = true;
   }
+
+function home() {
+    window.location.href = '/index.html';
+}
+
+function games() {
+  window.location.href = '/games/index.html';
+}
+
+function settings() {
+  window.location.href = '/settings/settings.html';
+}
+
+function fav() {
+  window.location.href = '#';
+}
+
+function prox() {
+  window.location.href = '/search.html';
+}
