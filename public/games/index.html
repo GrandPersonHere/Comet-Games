@@ -10,20 +10,15 @@
  </head>
  <body>
 
-  <nav class="navbar">
-    <a href="/index.html">
-        <button class="nav-button">Home</button>
-    </a>
-    <a href="/games/index.html">
-        <button class="nav-button">Games</button>
-    </a>
-    <a href="/settings/settings.html">
-        <button class="nav-button">Settings</button>
-    </a>
-    <a href="/search.html">
-        <button class="nav-button">Proxy</button>
-    </a>
-</nav>
+  <div class="container">
+    <div class="sidebar">
+        <img src="/Imgs/home.png">
+        <img src="/Imgs/games.png">
+        <img src="/Imgs/settings.png">
+        <img src="/Imgs/Favorite.png">
+        <img src="/Imgs/Prox.png">
+    </div>
+  </div>
 
     <div class="search-container">
       <input type="text" id="searchBar" oninput="filterGames()">
@@ -837,10 +832,6 @@
                 <img src="/projects/polybranch/img/pic1.png">
                 <span>Poly branch</span>
               </div>
-              <div class="box"onclick="openGame('polytrack')">
-                <img src="/projects/polytrack/image.jpg">
-                <span>Poly track</span>
-              </div>
               <div class="box"onclick="openGame('poor-bunny')">
                 <img src="/Imgs/icons/poorbunny.avif">
                 <span>Poor bunny</span>
@@ -1217,6 +1208,5 @@
     </main>
 
     <script src="/games/script.js"></script>
-    <script src="/aboutblank.js"></script>
 </body>
 </html>
