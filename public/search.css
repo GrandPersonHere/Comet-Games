@@ -13,19 +13,6 @@ body {
     background-position: center; /* Centers the background image */
 }
 
-.navbar {
-    display: flex;
-    gap: 2vw; /* Space between buttons */
-    justify-content: center; /* Center the buttons */
-    width: 100%; /* Make the navbar full width */
-    padding: 1vh 0; /* Vertical padding for spacing */
-    position: absolute; /* Positioning to move to the top */
-    top: 0; /* Align to the top */
-    background: rgba(255, 255, 255, 0.2); /* Transparent white background */
-    backdrop-filter: blur(10px); /* Blurs the content behind the navbar */
-    -webkit-backdrop-filter: blur(10px); /* Ensures compatibility with Safari */
-    z-index: 10; /* Ensure the navbar is above other content */
-}
 
 #uv-form {
     display: flex; /* Use flexbox for the form */
@@ -79,23 +66,29 @@ body {
     box-shadow: 0 2vh 3vh rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
 }
 
-.nav-button {
-    background: rgba(255, 255, 255, 0.2); /* Transparent white background */
-    backdrop-filter: blur(10px); /* Blurs the content behind */
-    -webkit-backdrop-filter: blur(10px); /* Ensures compatibility with Safari */
-    border-radius: 2vh; /* Rounded corners based on viewport height */
-    border: 0.4vh solid rgba(255, 255, 255, 0.4); /* Border based on viewport height */
-    padding: 0.5vw 1.5vw; /* Smaller padding for navigation buttons */
-    font-size: 2.5vh; /* Smaller font size based on viewport height */
-    text-transform: uppercase; /* Makes text uppercase */
-    letter-spacing: 0.2vh; /* Adds space between letters */
-    cursor: pointer; /* Changes the cursor to a pointer on hover */
-    color: #fff; /* Text color */
-    box-shadow: 0 1vh 1.5vh rgba(0, 0, 0, 0.3); /* Shadow using vh for consistent scaling */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+.sidebar {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 6vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4vh;
+    gap: 4.7vh;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.nav-button:hover {
-    transform: scale(1.05); /* Scale effect on hover */
-    box-shadow: 0 2vh 3vh rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+
+.sidebar img {
+    width: 4.5vw;
+    height: 10vh;
+    transition: transform 0.3s ease;
+}
+
+.sidebar img:hover {
+    transform: scale(1.1);
 }

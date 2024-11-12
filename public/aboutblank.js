@@ -18,7 +18,7 @@ if (localStorage.getItem("aboutblankEnabled") === "true") {
       iframestyle.width = iframestyle.height = '100%'
       bodystyle.margin = bodystyle.padding = '0'
       document.body.appendChild(iframe)
-      location.replace('https://classroom.google.com/');
+      location.replace('https://fisd.instructure.com/');
     }
   }
   
@@ -31,23 +31,3 @@ if (localStorage.getItem("aboutblankEnabled") === "true") {
     document.getElementById('enableAboutBlank').disabled = false;
     document.getElementById('disableAboutBlank').disabled = true;
   }
-
-function home() {
-    window.location.href = '/index.html';
-}
-
-function games() {
-  window.location.href = '/games/index.html';
-}
-
-function settings() {
-  window.location.href = '/settings/settings.html';
-}
-
-function fav() {
-  window.location.href = '#';
-}
-
-function prox() {
-  window.location.href = '/search.html';
-}
