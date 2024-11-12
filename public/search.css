@@ -18,10 +18,10 @@ body {
 }
 
 #uv-form {
+    margin-top: 35vh;
     display: flex; /* Use flexbox for the form */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center form items */
-    justify-content: center;
     margin-bottom: 2vh; /* Space between form and shortcuts */
 }
 
@@ -76,6 +76,7 @@ body {
     align-items: center;
     padding-top: 12vh;
     padding-left: 1.3vw;
+    position: fixed;
 }
 
 
