@@ -72,8 +72,7 @@ iframe {
   width: 100%;
   height: 100%;
   border-radius: 2vw;
-  border-color: #fff;
-  border-width: .25vw;
+  border: none;
 }
 
 .open-blank-button {
