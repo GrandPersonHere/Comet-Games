@@ -64,11 +64,37 @@ body {
 }
 
 #enableAboutBlank, #disableAboutBlank {
+    color: white;
+    background-color: rgb(70, 152, 219);
     font-size: 2.5vh;
-    background-color: blue;
     margin-top: 1vh;
     width: 6vw;
     height: 5vh;
     border: none;
     border-radius: 3vw;
+}
+
+
+.custom-link {
+    margin-top: 2vh;
+    text-align: center;
+}
+
+#customLinkInput {
+    font-size: 2vh;
+    padding: 0.5vh 1vw;
+    border: 1px solid #ccc;
+    border-radius: 1vw;
+    width: 15vw;
+    margin-right: 1vw;
+}
+
+#saveCustomLink {
+    font-size: 2vh;
+    background-color: rgb(70, 152, 219);
+    color: white;
+    border: none;
+    border-radius: 1vw;
+    padding: 0.5vh 1vw;
+    cursor: pointer;
 }
